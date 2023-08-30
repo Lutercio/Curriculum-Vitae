@@ -34,12 +34,12 @@ copy.addEventListener("click", () => {
     }, 1500);
   } else {
     copy.style.pointerEvents = "none";
-    copyIMG.src = "/assets/check.svg";
+    copyIMG.src = "check.svg";
     txtCopiar.innerHTML = " Copiado!";
     copiarTexto(email.innerHTML);
 
     setTimeout(() => {
-      copyIMG.src = "/assets/clipboard.svg";
+      copyIMG.src = "clipboard.svg";
       txtCopiar.innerHTML = " Copiar email";
       copy.style.pointerEvents = "auto";
     }, 1500);
